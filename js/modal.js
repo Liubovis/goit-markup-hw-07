@@ -16,9 +16,9 @@
 
   function toggleModal(e) {
     e.preventDefault();
-    modal.classList.toggle("is-hidden");
+    modal.classList.toggle("js-hidden");
 
-    !modal.classList.contains("is-hidden")
+    !modal.classList.contains("js-hidden")
       ? body.style.overflow = "hidden"
       : body.style.overflow = "auto";
   }

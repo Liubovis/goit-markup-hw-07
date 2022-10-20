@@ -9,7 +9,8 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal-form {
+.modal__form,
+.form {
   position: absolute;
 
   width: 528px;
@@ -34,7 +35,7 @@
   @include animation(fadeInDown, 3s);
 }
 
-.modal-btn-close {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -48,16 +49,16 @@
   background-color: $primary-background-color;
 
   cursor: pointer;
-}
 
-.modal-icon-close {
-  @include boxSize(18px, 18px);
-
-  fill: $logo-color;
-  transition: fill $duration-time-function;
-}
-
-.modal-btn-close:hover .modal-icon-close,
-.modal-btn-close:focus .modal-icon-close {
-  fill: $accent-text-color;
+  &__icon--close {
+    @include boxSize(18px, 18px);
+  
+    fill: $logo-color;
+    transition: fill $duration-time-function;
+  }
+  
+  &:hover &__icon--close,
+  &:focus &__icon--close {
+    fill: $accent-text-color;
+  }
 }

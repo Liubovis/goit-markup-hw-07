@@ -35,6 +35,7 @@ body {
   background-color: $primary-background-color;
 }
 
+/* Reusable classes */
 .root {
   position: relative;
 }
@@ -79,7 +80,7 @@ body {
   overflow: hidden;
 }
 
-.is-hidden {
+.js-hidden {
   display: none;
   visibility: hidden;
   opacity: 0;

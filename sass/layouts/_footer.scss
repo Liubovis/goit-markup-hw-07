@@ -9,44 +9,11 @@
   justify-content: space-between;
 }
 
-.logo-footer {
+.footer-logo {
   display: block;
   margin-bottom: 20px;
 
   color: $white-text-color;
-}
-
-.address {
-  font-style: normal;
-}
-
-.address-item {
-  margin-bottom: 5px;
-}
-
-.address-item:last-child {
-  margin-bottom: 0;
-}
-
-.address-link {
-  font-weight: 400;
-  color: $white-text-color;
-}
-
-.address-link[href^="mailto"],
-.address-link[href^="tel"] {
-  color: $white-opacity-text-color;
-}
-
-.address-link,
-.address-link[href^="mailto"],
-.address-link[href^="tel"] {
-  transition: color $duration-time-function;
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: $accent-text-color;
 }
 
 .footer-socials .socials-icon {
@@ -83,9 +50,4 @@
 
 .footer-form-btn {
   display: inline;
-}
-
-.email-icon {
-  @include boxSize(24px, 24px);
-  vertical-align: middle;
 }
