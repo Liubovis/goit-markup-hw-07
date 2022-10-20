@@ -3,25 +3,25 @@
   background-color: $dark-background-color;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.footer-logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 
   color: $white-text-color;
 }
 
-.footer-socials .socials-icon {
+.footer-socials .socials__icon {
   fill: $white-text-color;
 }
 
-.footer-socials-desc,
-.footer-form-label {
+.footer-socials__desc,
+.footer-form__label {
   display: block;
   margin-bottom: 20px;
 
@@ -30,7 +30,7 @@
   text-transform: uppercase;
 }
 
-.footer-form-input {
+.footer-form__input {
   display: inline;
   @include boxSize(358px, 50px);
   padding: 15px 16px;
@@ -41,13 +41,14 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    @include font(16px, 400, 1.3, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.footer-form-input::placeholder {
-  @include font(16px, 400, 1.3, 0.03em);
-  color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-form-btn {
+.footer-form__btn {
   display: inline;
 }
