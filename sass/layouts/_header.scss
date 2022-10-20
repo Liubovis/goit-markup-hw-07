@@ -18,12 +18,6 @@
   margin-right: 93px;
 
   color: $logo-color;
-  font-family: $secondary-font;
-  @include font(26px, 700, 1.2, 0.03em);
-}
-
-.logo-accent {
-  color: $accent-text-color;
 }
 
 .nav-list,

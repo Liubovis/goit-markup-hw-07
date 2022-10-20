@@ -13,8 +13,6 @@
   display: block;
   margin-bottom: 20px;
 
-  font-family: $secondary-font;
-  @include font(26px, 700, 1.2, 0.03em);
   color: $white-text-color;
 }
 
