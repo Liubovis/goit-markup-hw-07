@@ -28,17 +28,14 @@
 }
 
 .team-title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
   margin-bottom: 10px;
+  
+  @include font(16px, 500, 1.2, 0.03em);
 }
 
 .team-position {
   margin-bottom: 16px;
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
+  @include font(16px, 400, 1.2, 0.03em);
   color: $primary-text-color;
 }

@@ -21,6 +21,7 @@
   }
 }
 
+/* Media queries */
 $breakpoints: (
   "phone": 480px,
   "tablet": 768px,
@@ -38,5 +39,17 @@ $breakpoints: (
     @media screen and (#{$type}-width: $width) {
       @content;
     }
+  }
+}
+
+
+/* Animation */
+@mixin animation($animation, $duration) {
+  animation: $animation $duration;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
   }
 }
