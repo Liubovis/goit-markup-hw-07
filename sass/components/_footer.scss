@@ -1,0 +1,105 @@
+.footer {
+  padding: 60px 0;
+  background-color: $dark-background-color;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-item {
+  margin-bottom: 5px;
+}
+
+.address-item:last-child {
+  margin-bottom: 0;
+}
+
+.address-link {
+  font-weight: 400;
+  color: $white-text-color;
+}
+
+.address-link[href^="mailto"],
+.address-link[href^="tel"] {
+  color: $white-opacity-text-color;
+}
+
+.address-link,
+.address-link[href^="mailto"],
+.address-link[href^="tel"] {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: $accent-text-color;
+}
+
+.footer-socials .socials-icon {
+  fill: $white-text-color;
+}
+
+.footer-socials-desc,
+.footer-form-label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  color: $white-text-color;
+  text-transform: uppercase;
+}
+
+.footer-form-input {
+  display: inline;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 9px;
+
+  color: $white-text-color;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border-radius: 4px; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  display: inline;
+}
+
+.email-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
