@@ -2,7 +2,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header-wrapper {
+.header__wrapper {
   display: flex;
   align-items: center;
   min-height: 80px;
@@ -14,47 +14,58 @@
   margin-right: auto;
 }
 
-.nav-logo {
+.nav__logo {
   margin-right: 93px;
 
   color: $logo-color;
 }
 
-.nav-list,
-.contact-list {
+.nav__list,
+.contact__list {
   display: flex;
 
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.nav-link {
-  position: relative;
+.nav__item,
+.contact__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.contact-item {
+.contact__item {
   display: flex;
   align-items: center;
+
+  .contact__icon {
+    margin-right: 10px;
+
+    fill: #757575;
+    transition: fill $duration-time-function;
+  }
+
+  &:hover .contact__icon,
+  &:focus .contact__icon {
+    fill: $accent-text-color;
+  }
 }
 
-.nav-item,
-.contact-item {
-  margin-right: 50px;
+.nav__link {
+  position: relative;
+
+  display: block;
+  padding: 32px 0;
+
+  color: $secondary-text-color;
+  font-weight: 500;
 }
 
-.nav-item:last-child,
-.contact-item:last-child {
-  margin-right: 0;
-}
-
-.contact-icon {
-  margin-right: 10px;
-
-  fill: #757575;
-}
-
-.contact-link[href^="mailto"],
-.contact-link[href^="tel"] {
+.contact__link[href^="mailto"],
+.contact__link[href^="tel"] {
   display: flex;
   align-items: center;
   padding: 32px 0;
@@ -63,43 +74,12 @@
   font-weight: 500;
 }
 
-.nav-link {
-  display: block;
-  padding: 32px 0;
+.nav__link,
+.contact__link {
+  transition: color $duration-time-function;
 
-  color: $secondary-text-color;
-  font-weight: 500;
-}
-
-.active::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  @include boxSize(100%, 4px);
-
-  background-color: $accent-background-color;
-  border-radius: 2px;
-}
-
-.nav-link,
-.contact-link,
-.contact-item .contact-icon {
-  transition: color $duration-time-function,
-    fill $duration-time-function;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: $accent-text-color;
-}
-
-.contact-item:hover .contact-icon,
-.contact-item:focus .contact-icon {
-  fill: $accent-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
 }
